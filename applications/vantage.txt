@@ -1,0 +1,13 @@
+My girlfriend was doing her dissertation for her degree where she had to access the output from a spectrophotometer. 
+The proprietary software for this device was only compatible with Windows XP meaning their lab had to use an old laptop in order to read the measurements. 
+I very quickly realised the readings were outputted as plain .txt files so I provided a web-based tool hosted on github pages 
+(https://l1uk3.github.io/Spectrophotometer-Output-Visualiser/) for visualising and analysing this data. 
+Users can upload the text files containing measurement data, which are then parsed and displayed as interactive graphs. 
+This has made it easier for my girlfriend to complete her dissertation as it is designed to make it easy to inspect, plot, and interpret the readings 
+directly in the browser without having to use outdated specialised software. Her supervisor currently still uses the program in order to assist in her research.
+
+I am very passionate about competitively playing Pokemon and am very involved in the competitive scene in South Wales. 
+One of the main issues that the scene was facing was leagues were having poor retention of players and loss of interest because of clashing events and poor advertising.
+My solution was to create the web app https://playsouthwales.uk/ built on a modern web stack that includes a FastAPI backend, a supabase database and a React frontend. 
+I positioned myself as the lead developer where I collaborated with and sought advice from other players I knew with programming experience. 
+The outcome has been positive; I have achieved 250 page views in the recent release window and leagues are currently actively contacting me to schedule events. 
