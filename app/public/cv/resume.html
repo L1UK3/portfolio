@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Enness - CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        @page {
+            size: A4;
+            margin: 0.45in;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 11px;
+            line-height: 1.5;
+            color: #1e293b;
+            /* Sleek Slate Gray */
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        h1 {
+            font-size: 20pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            color: #0f172a;
+            margin: 0 0 8px 0;
+            letter-spacing: 0.5px;
+        }
+
+        h2 {
+            font-size: 10pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #2563eb;
+            /* Modern Accented Royal Blue */
+            border-bottom: 1.5px solid #cbd5e1;
+            margin: 14px 0 6px 0;
+            padding-bottom: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: #0f172a;
+            margin: 8px 0 2px 0;
+        }
+
+        p {
+            margin: 0 0 4px 0;
+        }
+
+        ul {
+            margin: 0 0 6px 0;
+            padding-left: 16px;
+        }
+
+        li {
+            margin-bottom: 3px;
+            position: relative;
+        }
+
+        /* Header list alignment */
+        .headerInfo>ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 10px 0;
+        }
+
+        .headerInfo>ul>li {
+            display: inline;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .headerInfo>ul>li:not(:last-child):after {
+            content: "  |  ";
+            margin: 0 8px;
+            color: #cbd5e1;
+        }
+
+        .spacer {
+            flex-grow: 1;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Luke Enness</h1>
+
+    <div class="headerInfo">
+        <ul>
+            <li>Swansea</li>
+            <li>luke@enness.dev</li>
+            <li>07908858255</li>
+            <li style="text-align: center;"><a href="https://github.com/L1UK3" target="_blank">https://github.com/L1UK3</a></li>
+        </ul>
+    </div>
+
+    <h2>Education</h2>
+
+    <h3>Swansea University</h3>
+    <p><em>Computer Science BSc with a Foundation Year</em></p>
+
+    <h3>King Solomon High School</h3>
+    <p><em>A-Levels: Mathematics, Computer Science, Physics &bull; GCSEs: 11 passes</em></p>
+
+    <h2>Technical Skills</h2>
+
+    <ul>
+        <li><strong>Programming Languages:</strong> TypeScript, Python</li>
+        <li><strong>Frontend:</strong> Next.js, React, Vite, Tailwind CSS, TanStack Router, TanStack Query, Three.js, pnpm
+        </li>
+        <li><strong>Backend & Databases:</strong> FastAPI, Supabase, Clerk Auth, Flask, SQLAlchemy, uv</li>
+        <li><strong>DevOps & Tools:</strong> Git, GitHub Actions, CI/CD pipelines </li>
+    </ul>
+
+    <h2>Projects</h2>
+
+    <h3>Play! South Wales <span class="spacer"></span> FastAPI + React (Vite)</h3>
+    
+    <p>An interactive, full-stack tournament pairings and league scheduling SaaS web application active in South Wales
+        Pokémon TCG leagues.</p>
+    <ul>
+        <li>Built a responsive frontend using React 19, Vite 8, TanStack Router & Query, Clerk, and Three.js 3D
+            visualizations.</li>
+        <li>Developed a high-performance Python FastAPI REST API with Supabase PostgreSQL and automated Discord
+            notifications.</li>
+        <li>Implemented automated CI/CD pipelines for deployments to Vercel and Render.</li>
+        <li>Successfully achieved a milestone of 208 page views during the application's launch period and maintained
+            consistent user engagement.</li>
+
+    </ul>
+
+    <h3>Spectrophotometer-Output-Visualiser <span class="spacer"></span> Vanilla JavaScript</h3>
+
+    <p>A web-based tool for visualising and analysing output data from a spectrophotometer.</p>
+    <p>Currently being used by a lecturer at Swansea University in place of proprietary software for research purposes.
+    </p>
+
+    <h3>CTHead Splicing (Visual Computing) <span class="spacer"></span> JavaFX</h3>
+    
+    <ul>
+        <li> 3D volume rendering desktop application for processing and rendering medical CT scan data.</li>
+        <li>Developed core rendering algorithms (MIP and VR) in JavaFX and presented a live viva to university
+            lecturers.</li>
+    </ul>
+
+    <h2>Experience</h2>
+
+    <h3>Sessional Assistant Instructor <span class="spacer"></span> August 2023 – September 2024</h3>
+    <p><em>Lambourne End Centre for Outdoor Learning</em></p>
+    <ul>
+        <li>Coordinated site operations, activity setups, and safety equipment logs for outdoor educational programs.
+        </li>
+        <li>Facilitated team challenge events for 100+ attendees and customized sessions for children with special
+            educational needs (SEN).</li>
+    </ul>
+
+    <h3>Youth Leader <span class="spacer"></span> October 2015 – June 2019</h3>
+    <p><em>Jewish Care</em></p>
+    <ul>
+        <li>Supervised and led recreational activity programs for large youth groups during half-term and summer
+            schemes.</li>
+        <li>Directed a successful 'Summer-World' activity session under regulatory review during an OFSTED inspection.
+        </li>
+    </ul>
+
+    <h2>Achievements & Other Qualifications</h2>
+
+    <ul>
+        <li><strong>Marie Curie Fundraising:</strong> Raised £90,000 for charity as a key contributor in a student
+            group, completing the Everest Base Camp Trek.</li>
+        <li><strong>Dodgeball Club Secretary:</strong> Promoted to Secretary after growing membership via social
+            campaigns; sustained club activity during Covid-19.</li>
+        <li><strong>Leadership & Volunteering:</strong> Received the Jack Petchey Award and the Yoni Jesner Award (50+
+            hours volunteering).</li>
+        <li><strong>Young Leader:</strong> Managed logistics, navigation, and safety risk assessments for Cubs and
+            Scouts.</li>
+        <li><strong>Certifications:</strong> Enhanced DBS Check, Safeguarding Level 2, Emergency First Aid at Work, Full
+            UK Driving Licence.</li>
+    </ul>
+
+</body>
+
+</html>
