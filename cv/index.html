@@ -1,333 +1,217 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luke Enness - CV</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Luke Enness - CV</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-      @page {
-        size: A4;
-        margin: 0.38in 0.42in;
-      }
+    <body>
+        <h1>Luke Enness</h1>
 
-      body {
-        font-family:
-          "Inter",
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          Roboto,
-          sans-serif;
-        font-size: 10.5px;
-        line-height: 1.45;
-        color: #1e293b;
-        max-width: 800px;
-        margin: 24px auto !important;
-        padding: 0 16px !important;
-        background-color: #ffffff;
-      }
+        <div class="headerInfo">
+            <ul>
+                <li>Swansea, UK</li>
+                <li>luke@enness.dev</li>
+                <li>07908858255</li>
+                <li>
+                    <a href="https://github.com/L1UK3" target="_blank"
+                        >github.com/L1UK3</a
+                    >
+                </li>
+            </ul>
+        </div>
 
-      @media print {
-        body {
-          max-width: 100%;
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-      }
+        <p>
+            A passionate and energetic aspiring junior developer with a keen
+            interest in software development and machine learning. Driven to use
+            problem-solving skills to build high-quality solutions for complex
+            technical challenges.
+        </p>
 
-      h1 {
-        font-size: 19pt;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-align: center;
-        color: #0f172a;
-        margin: 0 0 4px 0;
-        letter-spacing: 0.5px;
-      }
+        <h2>Education</h2>
 
-      h2 {
-        font-size: 9.5pt;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: #2563eb;
-        border-bottom: 1.2px solid #cbd5e1;
-        margin: 10px 0 4px 0;
-        padding-bottom: 1px;
-        letter-spacing: 0.5px;
-      }
+        <h3>Swansea University <span class="spacer"></span></h3>
+        <p><em>BSc (Hons) Computer Science with a Foundation Year</em></p>
 
-      h3 {
-        display: flex;
-        justify-content: space-between;
-        font-size: 9.2pt;
-        font-weight: 600;
-        color: #0f172a;
-        margin: 6px 0 1px 0;
-      }
+        <h2>Technical skills</h2>
 
-      .project-tag {
-        font-weight: 500;
-        color: #475569;
-        font-size: 8.8pt;
-      }
+        <ul class="skills-list">
+            <li>
+                <strong>Languages:</strong> Python, TypeScript, SQL, Java,
+                HTML5/CSS3
+            </li>
+            <li>
+                <strong>AI / ML & Simulation:</strong> PyTorch, Optuna,
+                Reinforcement Learning, Kaggle Environments
+            </li>
+            <li>
+                <strong>Frontend:</strong> React 19, Vite, TanStack Router,
+                TanStack Query, Tailwind CSS v4
+            </li>
+            <li>
+                <strong>Backend & Databases:</strong> FastAPI, Pydantic,
+                PostgreSQL (Supabase), Docker Compose, uv, PyArrow
+            </li>
+            <li>
+                <strong>DevOps, Testing & Quality:</strong> Git, GitHub Actions
+                CI/CD (Vercel, Render), Pytest, Ruff, ESLint
+            </li>
+        </ul>
 
-      p {
-        margin: 0 0 3px 0;
-      }
+        <h2>Projects</h2>
 
-      ul {
-        margin: 0 0 4px 0;
-        padding-left: 15px;
-      }
+        <h3>
+            <a href="https://playsouthwales.uk/" target="_blank"
+                >playsouthwales.uk</a
+            >&nbsp — Tournament Pairings & League Scheduling
+            <span class="spacer"></span>
+            <span class="project-tag"
+                >FastAPI, React 19, TypeScript, Supabase, Tailwind CSS</span
+            >
+        </h3>
+        <ul>
+            <li>
+                Developed and launched a tournament pairings and league
+                scheduling web app for the South Wales competitive Pokémon
+                community designed to solve player drop-off and scheduling
+                clashes.
+            </li>
+            <li>
+                Built a responsive frontend using React 19, TypeScript, TanStack
+                Router, TanStack Query, Clerk Auth, and Tailwind CSS v4 backed
+                by a FastAPI backend with a Supabase PostgreSQL database and
+                Pydantic models.
+            </li>
+            <li>
+                Wrote async background workers to automate the collection of
+                relevant tournament data such as major events and release dates
+                from community APIs and websites.
+            </li>
+            <li>
+                Set up Docker Compose for local development and automated CI/CD
+                pipelines for deployments to Vercel and Render.
+            </li>
+            <li>
+                Built a companion Discord bot that automatically posts
+                tournament pairings, schedules, and standings directly to local
+                league servers.
+            </li>
+            <li>
+                Scaled platform to 70 weekly active users and 200+ page views,
+                onboarding 16 tournament organisers across South Wales.
+            </li>
+        </ul>
 
-      li {
-        margin-bottom: 2px;
-        position: relative;
-      }
+        <h3>
+            Jeremy — Autonomous Agent & Simulation Framework
+            <span class="spacer"></span>
+            <span class="project-tag"
+                >Python, PyTorch, Optuna, Pytest, NumPy</span
+            >
+        </h3>
+        <ul>
+            <li>
+                Engineered an autonomous agent framework for the Kaggle
+                Kaggriculture competition, tested with a 68-test Pytest suite.
+            </li>
+            <li>
+                Implemented a spatial dispatcher that coordinates farm units
+                across a grid by scoring chore priorities and Manhattan
+                distances each turn.
+            </li>
+            <li>
+                Designed a NumPy-based neural macro-policy for daily farm
+                management tasks trained from supervised learning datasets
+                generated from Parquet replay logging scripts.
+            </li>
+            <li>
+                Ran parallel Optuna studies to tune multi-agent action
+                priorities such as planting, watering, and harvesting.
+            </li>
+            <li>
+                Automated bundling, verification, and performance benchmark
+                scripts for submitting agents directly to Kaggle tournaments.
+            </li>
+        </ul>
 
-      .skills-list {
-        list-style: none;
-        padding-left: 0;
-        margin: 0 0 4px 0;
-      }
+        <h3>
+            Stunfisk — Reinforcement Learning PTCG Agent
+            <span class="spacer"></span>
+            <span class="project-tag"
+                >Python, PyTorch, MCTS, Reinforcement Learning</span
+            >
+        </h3>
+        <ul>
+            <li>
+                Built an AlphaZero-style reinforcement learning agent for the
+                Kaggle Pokémon Trading Card Game Battle Simulation competition.
+            </li>
+            <li>
+                Combined neural network evaluation with Monte Carlo Tree Search
+                (MCTS) to play competitive Pokémon TCG.
+            </li>
+            <li>
+                Trained the nueral network concurrently through self-play while
+                optimizing PyTorch training loops to run efficiently on local
+                hardware.
+            </li>
+        </ul>
 
-      .skills-list li {
-        margin-bottom: 2.5px;
-      }
+        <h3>
+            Spectrophotometer — Laboratory Data Analysis Tool
+            <span class="spacer"></span>
+            <span class="project-tag">TypeScript, Vite, Plotly</span>
+        </h3>
+        <ul>
+            <li>
+                Created a browser-based analysis tool in TypeScript and Vite,
+                replacing legacy proprietary Windows XP software for university
+                researchers.
+            </li>
+            <li>
+                Created a client-side parser that takes raw .txt measurement
+                files and plots absorbance of light curves using plotly.
+            </li>
+            <li>
+                Currently used by Swansea University academic faculty and
+                students to process data for dissertation research.
+            </li>
+        </ul>
 
-      /* Header list alignment */
-      .headerInfo > ul {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        padding: 0;
-        margin: 0 0 8px 0;
-      }
+        <h3>
+            CTHead Scan — Visual Computing Project
+            <span class="spacer"></span> <span class="project-tag">JavaFX</span>
+        </h3>
 
-      .headerInfo > ul > li {
-        display: inline;
-        color: #64748b;
-        font-weight: 500;
-        font-size: 9.5px;
-      }
+        <ul>
+            <li>
+                Engineered a desktop application to process and render 3D
+                medical CT scan volumes.
+            </li>
+            <li>
+                Developed the core rendering algorithms Maximum Intensity
+                Projection (MIP) and 3D direct volume raycasting in JavaFX
+            </li>
+            <li>
+                Presented a live viva to university lecturers achieveing 100% on
+                the project.
+            </li>
+        </ul>
 
-      .headerInfo > ul > li:not(:last-child):after {
-        content: "  |  ";
-        margin: 0 6px;
-        color: #cbd5e1;
-      }
-
-      .headerInfo a {
-        color: #2563eb;
-        text-decoration: none;
-      }
-
-      .spacer {
-        flex-grow: 1;
-      }
-
-      em {
-        font-style: italic;
-        color: #475569;
-      }
-
-      strong {
-        font-weight: 600;
-        color: #0f172a;
-      }
-    </style>
-  </head>
-
-  <body>
-    <h1>Luke Enness</h1>
-
-    <div class="headerInfo">
-      <ul>
-        <li>Swansea, UK</li>
-        <li>luke@enness.dev</li>
-        <li>07908858255</li>
-        <li>
-          <a href="https://github.com/L1UK3" target="_blank"
-            >github.com/L1UK3</a
-          >
-        </li>
-      </ul>
-    </div>
-
-<p>A passionate and energetic aspiring junior developer with a keen interest in software development and machine learning. Driven to use problem-solving skills to build high-quality solutions for complex technical challenges.</p>
-
-    <h2>Education</h2>
-
-    <h3>Swansea University <span class="spacer"></span></h3>
-    <p><em>BSc (Hons) Computer Science with a Foundation Year</em></p>
-
-    <h2>Technical skills</h2>
-
-    <ul class="skills-list">
-      <li>
-        <strong>Languages:</strong> Python, TypeScript, SQL, Java,
-        HTML5/CSS3
-      </li>
-      <li>
-        <strong>AI / ML & Simulation:</strong> PyTorch, Optuna, Reinforcement
-        Learning, Kaggle Environments
-      </li>
-      <li>
-        <strong>Frontend:</strong> React 19, Vite, TanStack Router, TanStack
-        Query, Tailwind CSS v4
-      </li>
-      <li>
-        <strong>Backend & Databases:</strong> FastAPI, Pydantic, PostgreSQL
-        (Supabase), Docker Compose, uv, PyArrow
-      </li>
-      <li>
-        <strong>DevOps, Testing & Quality:</strong> Git, GitHub Actions CI/CD
-        (Vercel, Render), Pytest, Ruff, ESLint
-      </li>
-    </ul>
-
-    <h2>Projects</h2>
-
-    <h3>
-      <a href="https://playsouthwales.uk/" target="_blank">playsouthwales.uk</a
-      >&nbsp — Tournament Pairings & League Scheduling
-      <span class="spacer"></span>
-      <span class="project-tag"
-        >FastAPI, React 19, TypeScript, Supabase, Tailwind CSS</span
-      >
-    </h3>
-    <ul>
-      <li>
-        Developed and launched a tournament pairings and league scheduling web
-        app for the South Wales competitive Pokémon community designed to solve
-        player drop-off and scheduling clashes.
-      </li>
-      <li>
-        Built a responsive frontend using React 19, TypeScript, TanStack Router,
-        TanStack Query, Clerk Auth, and Tailwind CSS v4 backed by a FastAPI
-        backend with a Supabase PostgreSQL database and Pydantic models.
-      </li>
-      <li>
-        Wrote async background workers to automate the collection of relevant
-        tournament data such as major events and release dates from community
-        APIs and websites.
-      </li>
-      <li>
-        Set up Docker Compose for local development and automated CI/CD
-        pipelines for deployments to Vercel and Render.
-      </li>
-      <li>
-        Built a companion Discord bot that automatically posts tournament
-        pairings, schedules, and standings directly to local league servers.
-      </li>
-      <li>
-        Scaled platform to 70 weekly active users and 200+ page views,
-        onboarding 16 tournament organisers across South Wales.
-      </li>
-    </ul>
-
-    <h3>
-      Jeremy — Autonomous Agent & Simulation Framework
-      <span class="spacer"></span>
-      <span class="project-tag">Python, PyTorch, Optuna, Pytest, NumPy</span>
-    </h3>
-    <ul>
-      <li>
-        Engineered an autonomous agent framework for the Kaggle Kaggriculture
-        competition, tested with a 68-test Pytest suite.
-      </li>
-      <li>
-        Implemented a spatial dispatcher that coordinates farm units across a
-        grid by scoring chore priorities and Manhattan distances each turn.
-      </li>
-      <li>
-        Designed a NumPy-based neural macro-policy for daily farm management
-        tasks trained from supervised learning datasets generated from Parquet
-        replay logging scripts.
-      </li>
-      <li>
-        Ran parallel Optuna studies to tune multi-agent action priorities such
-        as planting, watering, and harvesting.
-      </li>
-      <li>
-        Automated bundling, verification, and performance benchmark scripts for
-        submitting agents directly to Kaggle tournaments.
-      </li>
-    </ul>
-
-    <h3>
-      Stunfisk — Reinforcement Learning PTCG Agent
-      <span class="spacer"></span>
-      <span class="project-tag"
-        >Python, PyTorch, MCTS, Reinforcement Learning</span
-      >
-    </h3>
-    <ul>
-      <li>
-        Built an AlphaZero-style reinforcement learning agent for the Kaggle Pokémon Trading Card Game Battle Simulation competition.
-</li>
-<li>
-Combined neural
-        network evaluation with Monte Carlo Tree Search (MCTS) to play
-        competitive Pokémon TCG.
-      </li>
-      <li>
-        Trained the nueral network concurrently through self-play while optimizing PyTorch
-        training loops to run efficiently on local hardware.
-      </li>
-    </ul>
-
-    <h3>
-      Spectrophotometer — Laboratory Data Analysis Tool
-      <span class="spacer"></span>
-      <span class="project-tag">TypeScript, Vite, HTML5 Canvas API</span>
-    </h3>
-    <ul>
-      <li>
-        Created a browser-based analysis tool in TypeScript and Vite, replacing
-        legacy proprietary Windows XP software for university researchers.
-      </li>
-      <li>
-        Created a client-side parser that takes raw .txt measurement files and
-        plots absorbance of light curves using plotly.
-      </li>
-      <li>
-        Currently used by Swansea University academic faculty and students to
-        process data for dissertation research.
-      </li>
-    </ul>
-
-    <h3>
-      CTHead Scan — Visual Computing Project
-      <span class="spacer"></span> <span class="project-tag">JavaFX</span>
-    </h3>
-
-    <ul>
-      <li>
-        Engineered a desktop application to process and render 3D medical CT
-        scan volumes.
-      </li>
-      <li>
-        Developed the core rendering algorithms Maximum Intensity Projection
-        (MIP) and 3D direct volume raycasting in JavaFX
-</li>
-<li>
-Presented a live
-        viva to university lecturers achieveing 100% on the project.
-      </li>
-    </ul>
-
-<h2>Current Employment</h2>
-<h3>Orbis Education & Care LTD<span class="spacer"></span></h3>
-    <p><em>Support Worker</em></p>
-<ul>
-<li>Handled high-stress situations calmly while following safeguarding protocols.
-</li>
-<li>Maintained accurate, confidential daily logs while following the Data Protection Act.
-<ul>
-
-
-  </body>
+        <h2>Current Employment</h2>
+        <h3>Orbis Education & Care LTD<span class="spacer"></span></h3>
+        <p><em>Support Worker</em></p>
+        <ul>
+            <li>
+                Handled high-stress situations calmly while following
+                safeguarding protocols.
+            </li>
+            <li>
+                Maintained accurate, confidential daily logs while following the
+                Data Protection Act.
+            </li>
+        </ul>
+    </body>
 </html>
