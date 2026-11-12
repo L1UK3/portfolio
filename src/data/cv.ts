@@ -10,33 +10,6 @@ export const profile = {
 		'A passionate and energetic aspiring junior developer with a keen interest in software development and machine learning. Driven to use problem-solving skills to build high-quality solutions for complex technical challenges.',
 };
 
-export const education = [
-	{
-		title: 'Swansea University',
-		subtitle: 'BSc (Hons) Computer Science with a Foundation Year',
-	},
-];
-
-export const skills = [
-	{ label: 'Languages', items: ['Python', 'TypeScript', 'SQL', 'Java', 'HTML5/CSS3'] },
-	{
-		label: 'AI / ML & Simulation',
-		items: ['PyTorch', 'Optuna', 'Reinforcement Learning', 'Kaggle Environments'],
-	},
-	{
-		label: 'Frontend',
-		items: ['React 19', 'Vite', 'TanStack Router', 'TanStack Query', 'Tailwind CSS v4'],
-	},
-	{
-		label: 'Backend & Databases',
-		items: ['FastAPI', 'Pydantic', 'PostgreSQL (Supabase)', 'Docker Compose', 'uv', 'PyArrow'],
-	},
-	{
-		label: 'DevOps, Testing & Quality',
-		items: ['Git', 'GitHub Actions CI/CD (Vercel, Render)', 'Pytest', 'Ruff', 'ESLint'],
-	},
-];
-
 export interface Project {
 	title: string;
 	blurb: string;
@@ -100,17 +73,6 @@ export const projects: Project[] = [
 			'Engineered a desktop application to process and render 3D medical CT scan volumes.',
 			'Developed the core rendering algorithms Maximum Intensity Projection (MIP) and 3D direct volume raycasting in JavaFX.',
 			'Presented a live viva to university lecturers achieving 100% on the project.',
-		],
-	},
-];
-
-export const employment = [
-	{
-		title: 'Orbis Education & Care LTD',
-		subtitle: 'Support Worker',
-		points: [
-			'Handled high-stress situations calmly while following safeguarding protocols.',
-			'Maintained accurate, confidential daily logs while following the Data Protection Act.',
 		],
 	},
 ];

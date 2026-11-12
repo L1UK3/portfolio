@@ -1,15 +1,10 @@
 ---
 import '../styles/global.css';
-import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
 import Section from '../components/Section.astro';
-import CaseStudy from '../components/CaseStudy.astro';
 import ProjectRow from '../components/ProjectRow.astro';
-import SkillGroup from '../components/SkillGroup.astro';
-import TimelineItem from '../components/TimelineItem.astro';
 import Colophon from '../components/Colophon.astro';
-import { projects, skills, education, employment } from '../data/cv';
-const [featured, ...others] = projects;
+import { projects } from '../data/cv';
 ---
 
 <html lang="en">
@@ -21,34 +16,14 @@ const [featured, ...others] = projects;
 	</head>
 	<body>
 		<main class="page">
-			<Nav />
 			<Hero />
 
-			<Section id="skills" title="technical skills">
-				{skills.map((s) => (
-					<SkillGroup label={s.label} items={s.items} />
-				))}
-			</Section>
-
 			<Section id="projects" title="projects I’ve built">
-				<CaseStudy project={featured} />
 				<div class="index">
-					{others.map((p) => (
+					{projects.map((p) => (
 						<ProjectRow project={p} />
 					))}
 				</div>
-			</Section>
-
-			<Section id="education" title="education">
-				{education.map((e) => (
-					<TimelineItem title={e.title} subtitle={e.subtitle} />
-				))}
-			</Section>
-
-			<Section id="work" title="current employment">
-				{employment.map((e) => (
-					<TimelineItem title={e.title} subtitle={e.subtitle} points={e.points} />
-				))}
 			</Section>
 
 			<Colophon />
