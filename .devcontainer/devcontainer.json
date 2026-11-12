@@ -4,7 +4,6 @@
         "dockerfile": "Dockerfile"
     },
 
-    "workspaceFolder": "/workspaces/astro",
     "portsAttributes": {
         "4321": {
             "label": "Application",
@@ -14,10 +13,10 @@
     "forwardPorts": [
         4321
     ],
-    "postCreateCommand": "pnpm install && cd /workspaces/astro && pnpm run build",
+    "postCreateCommand": "npm ci && npm run build",
     "waitFor": "postCreateCommand",
     "postAttachCommand": {
-        "Server": "pnpm start --host"
+        "Server": "npm run dev -- --host"
     },
     "customizations": {
         "codespaces": {
