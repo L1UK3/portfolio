@@ -4,7 +4,6 @@ export const profile = {
 	tagline: 'Aspiring junior developer in Swansea, into software and machine learning.',
 	location: 'Swansea, UK',
 	email: 'luke@enness.dev',
-	phone: '07908858255',
 	github: { label: 'github.com/L1UK3', href: 'https://github.com/L1UK3' },
 	summary:
 		'A passionate and energetic aspiring junior developer with a keen interest in software development and machine learning. Driven to use problem-solving skills to build high-quality solutions for complex technical challenges.',
