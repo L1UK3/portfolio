@@ -9,9 +9,7 @@
 			"onAutoForward": "openPreview"
 		}
 	},
-	"forwardPorts": [
-		4321
-	],
+	"forwardPorts": [4321],
 	"postCreateCommand": "npm ci && npm run build",
 	"waitFor": "postCreateCommand",
 	"postAttachCommand": {
@@ -19,9 +17,7 @@
 	},
 	"customizations": {
 		"codespaces": {
-			"openFiles": [
-				"src/pages/index.astro"
-			]
+			"openFiles": ["src/pages/index.astro"]
 		},
 		"vscode": {
 			"extensions": [
