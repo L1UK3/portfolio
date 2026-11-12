@@ -27,8 +27,7 @@
 			"extensions": [
 				"astro-build.astro-vscode",
 				"esbenp.prettier-vscode",
-				"tailwindlabs.tailwindcss-intellisense",
-				"bradlc.vscode-tailwindcss"
+				"tailwindlabs.tailwindcss-intellisense"
 			]
 		}
 	}
