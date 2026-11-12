@@ -1,0 +1,43 @@
+---
+import { profile } from '../data/cv';
+---
+
+<header class="hero container" id="top">
+	<h1 data-reveal>{profile.name.toLowerCase()}</h1>
+	<p class="lead" data-reveal>
+		{profile.tagline}
+	</p>
+	<div class="actions" data-reveal>
+		<a class="btn btn--primary" href="#projects">
+			see the projects
+		</a>
+		<a class="link mail" href={`mailto:${profile.email}`}>
+			email me
+		</a>
+	</div>
+</header>
+
+<style>
+	.hero {
+		min-height: calc(100svh - 72px);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		gap: var(--space-lg);
+		padding-bottom: var(--space-2xl);
+	}
+	h1 {
+		max-width: none;
+		font-size: clamp(3.5rem, 14vw, 11rem);
+		line-height: 0.9;
+	}
+	.actions {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: var(--space-lg);
+	}
+	.mail {
+		font: 500 var(--text-md)/1 var(--font-display);
+	}
+</style>
